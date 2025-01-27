@@ -5,80 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition Metals</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding-top: 50px;
-            
+        body { /* Common style for all pages */
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+          background-color: #f8f8f8; /* Light gray background */
+          color: #333; /* Dark text for readability */
+          margin: 0;
+          padding: 0;
+          line-height: 1.6; /* Improved line spacing */
         }
-        .tabs {
-            position: fixed;
-            top: 0;
-            left: 0;
-             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            z-index: 100; /* Ensure tabs are on top */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        h1, h2, h3 {
+          color: #2c3e50; /* Darker color for headings */
+          font-weight: bold;
+          text-align: center;
+          margin-top: 10px;
         }
 
+        /* Tab Styles */
+        .tabs {
+          position: fixed; /* Fixed position */
+          top: 0;
+          width: 100%;
+          background-color: #2980b9; /* Blue color */
+          color: white;
+          padding: 10px 0;
+          text-align: center;
+          z-index: 100; /* Ensure on top */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
         .tabs a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px; /* Adjusted padding for smaller tabs */
-            margin: 0 5px; /* Adjusted margin for spacing */
-            border-radius: 5px;
-            background-color: #444;
-            transition: background-color 0.2s; /* Smoother transition */
-            display: inline-block;
+          color: white;
+          text-decoration: none;
+          padding: 8px 12px; /* Adjusted padding for smaller tabs */
+          margin: 0 5px; /* Adjusted margin for spacing */
+          border-radius: 4px;
+          background-color: #3498db; /* Lighter blue */
+          transition: background-color 0.3s ease; /* Smooth hover */
         }
         .tabs a:hover {
-            background-color: #666;
+          background-color: #1f618d; /* Darker blue on hover */
         }
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            color: #333;
+        /* Content styles */
+        main {
+          padding-top: 60px; /* Push down to make room for the tabs */
+          padding-bottom: 20px;
+          text-align: center;
         }
-
+        /* Table Styles */
         table {
-            width: 80%;
-            max-width: 1000px;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 20px auto;
-            border-collapse: collapse;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 90%; /* Responsive width */
+          max-width: 1200px; /* Limit max width */
+          margin: 20px auto; /* Center and add space around */
+          border-collapse: collapse;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          overflow: hidden;
         }
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
+          border: 1px solid #ddd; /* Lighter border */
+          padding: 12px; /* Increase padding */
+          text-align: center;
         }
+
         th {
-            background-color: #4CAF50;
-            color: white;
+          background-color: #3498db; /* Blue header */
+          color: white;
+          font-weight: bold;
         }
-        
-        tr:nth-child(even) {
-            background-color: #f8f8f8;
+
+        tbody tr:nth-child(even) {
+          background-color: #f2f2f2; /* Alternate row color */
         }
-        td.center {
+        td.center, th.center {
           text-align: center;
         }
-        th.center{
-          text-align: center;
-        }
-        
         .highlight {
-           font-weight: bold;
+          font-weight: bold;
         }
         .small-text {
-           font-size: 0.8em;
+          font-size: 0.8em;
         }
+        .table-container {
+          overflow-x: auto; /* Enables horizontal scrolling if table overflows */
+        }
+
     </style>
     
 </head>
@@ -86,6 +95,9 @@
     <div class="tabs">
         <a href="index.html">Home</a>
         <a href="periodic_table.html">Periodic Table</a>
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
     </div>
     <h1>Transition Metals</h1> 
     <table>

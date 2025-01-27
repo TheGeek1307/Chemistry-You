@@ -5,62 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alkaline Earth Metals</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            margin-top: 60px;
+        }
+
         table {
-            width: 80%;
-            margin: 120px auto 20px; /* Adjust margin to accommodate fixed tabs */
-            border-collapse: collapse;            
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);            
         }
 
         th, td {
-            border: 1px solid black;
-            padding: 8px;
+            border: 1px solid #ddd;
+            padding: 10px;
             text-align: center;
-        }
-        body {
-            margin-top: 100px;
-        }
+        }        
         th {
             background-color: #e0e0e0;
-            font-weight: bold;
+            font-weight: bold;            
         }
+
         .tabs {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #f0f0f0;
+            background-color: #fff;
             padding: 10px 0;
-            text-align: center;
+            text-align: left;
             z-index: 100;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);            
         }
 
         .tabs a {
             margin: 0 10px;
             text-decoration: none;
             color: black;
-            padding: 3px 8px; /* Reduced padding */
-            border: 1px solid black;
-            border-radius: 5px;
-            background-color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .tabs a:hover {
-          background-color: #e0e0e0;
-        }        
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f8f8f8;
-          color: #333;
-          line-height: 1.6;
-          margin: 0;
+            padding: 5px 10px;
         }
         
         h1 {
             text-align: center;
             margin: 20px auto;
         }        
+    </style>
+    <style>
+        
+        .tabs a {
+            background-color: #e9e9e9;
+            border-radius: 5px;            
+        }
+        .tabs a:hover {
+            background-color: #e0e0e0;            
+        }
     </style>
 </head>    
 <body>

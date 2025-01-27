@@ -6,64 +6,62 @@
     <title>Halogens</title>
     <style>
         body {
-            margin: 0; /* Remove default body margins */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 70px;
         }
 
         /* Tab Styles */
-         .tabs {
+        .tabs {
             position: fixed;
             top: 0;
-            left: 0;
-            display: flex;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+            display: flex;
+            background-color: #444;
             z-index: 100;
+            padding: 0;
+            text-align: center;
+            justify-content: center;
         }
         .tabs a {
-            flex-grow: 0;
-            display: block;
-            color: white;
+            color: #fff;
             text-decoration: none;
-            padding: 8px 12px; /* Adjusted padding for smaller tabs */
-            margin: 0 2px;
-            white-space: nowrap; /* Prevent text from wrapping */
-            transition: background-color 0.3s;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            height: 100%;
         }
-        .tabs a:hover{
-            background-color: #555;
+
+        .tabs a:hover {
+            background-color: #666;
         }
 
         /* Table Styles */
         table {
-            width: 80%;
-            max-width: 800px;
+            width: 70%;
+            margin: 20px auto;
             border-collapse: collapse;
-            margin: 60px auto 20px; /* Adjusted top margin */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
             text-align: center;
         }
-        th { 
-            background-color: #f0f0f0; 
+
+        table th {
+            background-color: #009879;
+            color: #ffffff;
         }
-        h1 {
-            text-align: center;
-            margin-top: 60px; /* Adjusted top margin */
-        }
-        .container{
-            display:flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .melting, .boiling{
-            width: 35%;
+        .container{ display: flex; justify-content: center; }
+        .melting, .boiling{ width: auto; }
         }
     </style>
      <style>

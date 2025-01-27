@@ -5,66 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanthanides</title>
     <style>
-        table {
-            width: 90%;
-            margin: 100px auto 20px auto; /* Increased top margin */
-            border-collapse: collapse;
+         body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        
+    
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-            font-size: 14px;
+            padding: 10px 15px;
+            text-align: left;
         }
-
+    
         th {
             background-color: #f0f0f0;
         }
-
+    
         .tabs {
             position: fixed;
             top: 0;
-            left: 0;
+            right: 0;
             display: flex;
-            justify-content: center;
-            width: 100%;
-            background-color: #333; /* Dark background for better contrast */
-            padding: 15px 0;
-            z-index: 100; /* High z-index to ensure it's always on top */
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            gap: 5px;
+            z-index: 1000;
+            margin-top: 15px;
+            padding-right: 5px;
         }
         .tabs a {
-            text-decoration: none;
-            color: #fff; /* White text */
-            padding: 5px 10px;
-            margin: 0 5px;
-            border: 1px solid #555; /* Darker border */
-            border-radius: 25px; /* Rounded corners */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-            font-weight: bold;
-        }
-        .tabs a:hover {
-            background-color: #555;
+            background-color: #333;
             color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 12px;
         }
-
-        .tab-container {
-            margin-top: 60px; /* Adjust for height of tabs */
-        }
-
-        h2 {
-            text-align: center;
-            margin-top: 80px;
-            color: #333;
-        }
-        .section-header {
-            font-weight: bold;
-            margin-top: 20px;
-            color: #333;
-        }
-        body{
-            font-family: sans-serif;
+        .tabs a:hover{
+            background-color: darkgrey;
         }
     </style>
 </head>
