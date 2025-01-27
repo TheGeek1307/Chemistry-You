@@ -26,13 +26,13 @@
             background-color: white;
             
             color: #333;
+            display: flex;
+            justify-content: center; 
         }
 
         table {
             width: 80%;
             margin: 120px auto 20px; /* Adjusted top margin to accommodate tabs */
-            margin-left: auto;
-            margin-right: auto;
             border-collapse: collapse;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -130,6 +130,9 @@
             display: block;
         }
         /* Alternating row colors */
+        .table-container {
+        display: flex;
+        justify-content: center;
         tbody tr:nth-child(even) {
             background-color: #f9f9f9;
         }
@@ -172,7 +175,7 @@
        
         </div>
     <table id="periodic-table" >
-         
+         <div class="table-container">
         <thead>
              <tr>
                 <th>Atomic Number</th>
@@ -415,5 +418,6 @@
             <tr class="additional-row"><td colspan="3"></td><td class="extra-info">-111.8</td><td class="extra-info">-108.1</td></tr>
         </tbody>
     </table>
+        </div>
 </body>
 </html>
