@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Periodic Elements</title>
-    <style>
-      body {
-            background: linear-gradient(to right, #e0eafc, #cfdef3); /* Gradient background */
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0; /* Remove default body margins */
-            padding: 20px;
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-        }
+<style>
+    body {
+        background: linear-gradient(to right, #e0eafc, #cfdef3); /* Gradient background */
+        font-family: sans-serif;
+        margin: 0; /* Remove default body margins */
+        padding: 20px;
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
 
-        h1 {
-            font-size: 3em; /* Make it the biggest element */
-            margin-bottom: 20px;
-            margin-top: 20px;
-            text-align: center;
-            font-weight: bold;
-        }
+    h1 {
+        font-size: 3em; /* Make it the biggest element */
+        margin-bottom: 20px;
+        margin-top: 60px; /* Add space below the tabs */
+hgg        text-align: center;
+        font-weight: bold;
+    }
 
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 10px; /* Rounded edges */
-            margin: 20px; /* Margin around the button */
-            cursor: pointer;
-        }
-    </style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px; /* Rounded edges */
+        margin: 20px; /* Margin around the button */
+        cursor: pointer;
+    }
+
+    .tabs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px 0;
+        z-index: 100; /* Ensure tabs are on top */
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .tabs a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
 </head>
 <body>
+    <div class="tabs">
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
+    </div>
     <h1>Periodic Elements</h1>
     <a href="periodic_table.html" class="button">Go to Periodic Table</a>
 </body>

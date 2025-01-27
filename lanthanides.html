@@ -6,23 +6,90 @@
     <title>Lanthanides</title>
     <style>
         table {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            margin: 80px auto 20px auto;
             border-collapse: collapse;
         }
+        
         th, td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
         }
+
         th {
             background-color: #f0f0f0;
+        }
+
+        .tabs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            z-index: 100; /* Ensure tabs are on top */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .tab-container {
+            margin-top: 60px; /* Adjust for height of tabs */
+        }
+
+        .point-header {
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <h2>Lanthanides</h2>
+
+    <table>
+        <div class="tabs">
+            <a href="index.html">Home</a>
+            <a href="periodic_table.html">Periodic Table</a>
+            <a href="alkali_metals.html">Alkali Metals</a>
+            <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+            <a href="transition_metals.html">Transition Metals</a>
+            <a href="lanthanides.html">Lanthanides</a>
+            <a href="actinides.html">Actinides</a>
+            <a href="halogens.html">Halogens</a>
+            <a href="noble_gases.html">Noble Gases</a>
+        </div>
+
+    <div class="tab-container">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Atomic Number</th>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Melting Point (°C)</th>
+                <th>Boiling Point (°C)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>57</td>
+                <td>La</td>
+                <td>Lanthanum</td>
+                <td>920</td>
+                <td>3464</td>
+            </tr>
+        </tbody>
+    </table>
 
     <table>
         <thead>
@@ -110,6 +177,11 @@
             </tr>
         </tbody>
     </table>
+
+    <h3 class="point-header">Melting Points</h3>
+    <p>Melting point data in the first table above.</p>
+    <h3 class="point-header">Boiling Points</h3>
+    <p>Boiling point data in the first table above.</p>
 
 </body>
 </html>

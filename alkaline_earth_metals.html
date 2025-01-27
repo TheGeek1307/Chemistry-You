@@ -6,18 +6,41 @@
     <title>Alkaline Earth Metals</title>
     <style>
         table {
-            width: 50%;
+            width: 80%;
             border-collapse: collapse;
             margin: 20px auto;
+            
         }
         th, td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
         }
+        body {
+            margin-top: 100px;
+        }
         th {
             background-color: #f0f0f0;
         }
+        .tabs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 100;
+        }
+        .tabs a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
     </style>
 </head>
 <body>
@@ -25,9 +48,22 @@
     <table>
         <thead>
             <tr>
+              <th colspan="3">Alkaline Earth Metals</th>
+            </tr>
+            <tr>
                 <th>Name</th>
                 <th>Atomic Number</th>
                 <th>Symbol</th>
+            </tr>
+            
+            <tr>
+                <th colspan="3">Melting Point</th>
+            </tr>
+            <tr>
+              <th colspan="3">Boiling Point</th>
+            </tr>
+            <tr>
+              <th colspan="3"></th>
             </tr>
         </thead>
         <tbody>
@@ -63,5 +99,21 @@
             </tr>
         </tbody>
     </table>
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
+    </div>
+    
+        
+    
+    
+    
+    
 </body>
 </html>

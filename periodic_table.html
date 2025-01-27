@@ -6,16 +6,16 @@
     <title>Periodic Table</title>
    
     <style>
-         .tab-container {
+        body {
+            margin: 0; /* Remove default body margins */
+        }
+        .tab-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            position: sticky;
-            top: 0; 
-        }
-        
-        table {
+            position: absolute; /* Changed to absolute positioning */
+            top: 0; /* Positioned at the top */
+            width: 100%;
+            background-color: #f0f0f0; /* Optional: Add background color for better visibility */
             width: 80%;
             margin: 20px auto;
             justify-content: center;
@@ -25,6 +25,7 @@
             margin: 20px auto;
             border-collapse: collapse;
         }
+        
         th, td {
             border: 1px solid black;
             padding: 8px;
@@ -38,7 +39,6 @@
         }
         tr:nth-child(odd) {
             background-color: #f8f8f8;
-        }
         }
         .tab-button {
             padding: 10px 20px;
@@ -63,6 +63,15 @@
         .additional-row {
             background-color: #e9ecef;
         }
+        .melting-point, .boiling-point {
+            display: inline-block;
+        }
+        .melting-point::before {
+            content: "Melting Point: ";
+        }
+        .boiling-point::before {
+            content: "Boiling Point: ";
+        }
     </style>
     
 </head>
@@ -83,11 +92,11 @@
                 <th>Symbol</th>
                 <th>Name</th>
                 <th>Atomic Weight</th>
+                <th>Melting and Boiling Point</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td><td>H</td><td>Hydrogen</td><td>1.008</td>
+            <tr><td>1</td><td>H</td><td>Hydrogen</td><td>1.008</td><td class="extra-info"><span class="melting-point">-259.2°C</span>, <span class="boiling-point">-252.8°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -259.2°C, Boiling Point: -252.8°C</td></tr>
             <tr>
@@ -100,11 +109,11 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 180.5°C, Boiling Point: 1342°C</td></tr>
             <tr>
                 <td>4</td><td>Be</td><td>Beryllium</td><td>9.0122</td>
+                <td class="extra-info"><span class="melting-point">1287°C</span>, <span class="boiling-point">2470°C</span></td>
             </tr>
-            <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1287°C, Boiling Point: 2470°C</td></tr>
             <tr>
                 <td>5</td><td>B</td><td>Boron</td><td>10.81</td>
-            </tr>
+                <td class="extra-info"><span class="melting-point">2076°C</span>, <span class="boiling-point">3927°C</span></td>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 2076°C, Boiling Point: 3927°C</td></tr>
             <tr>
                 <td>6</td><td>C</td><td>Carbon</td><td>12.011</td>
@@ -120,6 +129,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -218.8°C, Boiling Point: -183.0°C</td></tr>
             <tr>
                 <td>9</td><td>F</td><td>Fluorine</td><td>18.998</td>
+                <td class="extra-info"><span class="melting-point">-220.0°C</span>, <span class="boiling-point">-188.1°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -220.0°C, Boiling Point: -188.1°C</td></tr>
             <tr>
@@ -136,6 +146,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 650°C, Boiling Point: 1090°C</td></tr>
             <tr>
                 <td>13</td><td>Al</td><td>Aluminum</td><td>26.982</td>
+                <td class="extra-info"><span class="melting-point">660.3°C</span>, <span class="boiling-point">2470°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 660.3°C, Boiling Point: 2470°C</td></tr>
             <tr>
@@ -152,10 +163,11 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 115.2°C, Boiling Point: 444.6°C</td></tr>
             <tr>
                 <td>17</td><td>Cl</td><td>Chlorine</td><td>35.45</td>
+                <td class="extra-info"><span class="melting-point">-101.5°C</span>, <span class="boiling-point">-34.0°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -101.5°C, Boiling Point: -34.0°C</td></tr>
             <tr>
-                <td>18</td><td>Ar</td><td>Argon</td><td>39.95</td>
+                <td>18</td><td>Ar</td><td>Argon</td><td>39.95</td><td class="extra-info"><span class="melting-point">-189.4°C</span>, <span class="boiling-point">-185.9°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -189.4°C, Boiling Point: -185.9°C</td></tr>
             <tr>
@@ -172,6 +184,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1541°C, Boiling Point: 2836°C</td></tr>
             <tr>
                 <td>22</td><td>Ti</td><td>Titanium</td><td>47.867</td>
+                <td class="extra-info"><span class="melting-point">1668°C</span>, <span class="boiling-point">3287°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1668°C, Boiling Point: 3287°C</td></tr>
             <tr>
@@ -184,6 +197,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1907°C, Boiling Point: 2671°C</td></tr>
             <tr>
                 <td>25</td><td>Mn</td><td>Manganese</td><td>54.938</td>
+                <td class="extra-info"><span class="melting-point">1246°C</span>, <span class="boiling-point">2061°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1246°C, Boiling Point: 2061°C</td></tr>
             <tr>
@@ -200,6 +214,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1455°C, Boiling Point: 2913°C</td></tr>
             <tr>
                 <td>29</td><td>Cu</td><td>Copper</td><td>63.546</td>
+                <td class="extra-info"><span class="melting-point">1085°C</span>, <span class="boiling-point">2562°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1085°C, Boiling Point: 2562°C</td></tr>
             <tr>
@@ -216,6 +231,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 938.3°C, Boiling Point: 2833°C</td></tr>
             <tr>
                 <td>33</td><td>As</td><td>Arsenic</td><td>74.922</td>
+                <td class="extra-info"><span class="melting-point">817°C</span>, <span class="boiling-point">615°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 817°C, Boiling Point: 615°C</td></tr>
             <tr>
@@ -228,11 +244,11 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -7.2°C, Boiling Point: 58.8°C</td></tr>
             <tr>
                 <td>36</td><td>Kr</td><td>Krypton</td><td>83.798</td>
+                <td class="extra-info"><span class="melting-point">-157.4°C</span>, <span class="boiling-point">-153.2°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: -157.4°C, Boiling Point: -153.2°C</td></tr>
             <tr>
-                <td>37</td><td>Rb</td><td>Rubidium</td><td>85.468</td>
-            </tr>
+                <td>37</td><td>Rb</td><td>Rubidium</td><td>85.468</td><td class="extra-info"><span class="melting-point">39.3°C</span>, <span class="boiling-point">688°C</span></td>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 39.3°C, Boiling Point: 688°C</td></tr>
             <tr>
                 <td>38</td><td>Sr</td><td>Strontium</td><td>87.62</td>
@@ -248,6 +264,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 1855°C, Boiling Point: 4409°C</td></tr>
        
             <tr>
+                
              <td>41</td><td>Nb</td><td>Niobium</td><td>92.906</td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 2477°C, Boiling Point: 4744°C</td></tr>
@@ -285,6 +302,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 156.6°C, Boiling Point: 2072°C</td></tr>
             <tr>
                 <td>50</td><td>Sn</td><td>Tin</td><td>118.71</td>
+                <td class="extra-info"><span class="melting-point">231.9°C</span>, <span class="boiling-point">2602°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 231.9°C, Boiling Point: 2602°C</td></tr>
             <tr>
@@ -293,6 +311,7 @@
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 630.6°C, Boiling Point: 1587°C</td></tr>
             <tr>
                 <td>52</td><td>Te</td><td>Tellurium</td><td>127.6</td>
+                <td class="extra-info"><span class="melting-point">449.5°C</span>, <span class="boiling-point">988°C</span></td>
             </tr>
             <tr class="additional-row"><td colspan="4" class="extra-info">Melting Point: 449.5°C, Boiling Point: 988°C</td></tr>
             <tr>

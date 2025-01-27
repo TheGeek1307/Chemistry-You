@@ -4,26 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alkali Metals</title>
+
     <style>
         body {
             font-family: sans-serif;
+            margin: 0; /* Remove default body margins */
         }
+        /* Basic table styling */
         table {
             width: 50%;
             margin: 20px auto;
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f0f0f0;
+        }
+
+        /* Tab styles */
+        .tabs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            z-index: 100; /* Ensure tabs are on top */
+        }
+
+        .tabs a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
         }
     </style>
 </head>
 <body>
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="periodic_table.html">Periodic Table</a>
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
+    </div>
     <h1>Alkali Metals</h1>
     <table>
         <thead>
@@ -31,6 +66,8 @@
                 <th>Name</th>
                 <th>Atomic Number</th>
                 <th>Symbol</th>
+                <th>Melting Point</th>
+                <th>Boiling Point</th>
             </tr>
         </thead>
         <tbody>
@@ -38,31 +75,44 @@
                 <td>Lithium</td>
                 <td>3</td>
                 <td>Li</td>
+                <td>180.54 °C</td>
+                <td>1342 °C</td>
             </tr>
             <tr>
                 <td>Sodium</td>
                 <td>11</td>
                 <td>Na</td>
+                <td>97.72 °C</td>
+                <td>882.9 °C</td>
             </tr>
             <tr>
                 <td>Potassium</td>
                 <td>19</td>
                 <td>K</td>
+                <td>63.5 °C</td>
+                <td>759 °C</td>
             </tr>
             <tr>
                 <td>Rubidium</td>
                 <td>37</td>
                 <td>Rb</td>
+                <td>39.31 °C</td>
+                <td>688 °C</td>
             </tr>
             <tr>
                 <td>Cesium</td>
                 <td>55</td>
                 <td>Cs</td>
+                <td>28.44 °C</td>
+                <td>671 °C</td>
             </tr>
             <tr>
                 <td>Francium</td>
                 <td>87</td>
                 <td>Fr</td>
+                <td>27 °C</td>
+                <td>677 °C</td>
+
             </tr>
         </tbody>
     </table>

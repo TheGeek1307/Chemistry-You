@@ -5,26 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noble Gases</title>
     <style>
+        /* Base Styles */
         body {
             font-family: sans-serif;
             background-color: lightblue;
+            margin: 0; /* Remove default body margins */
         }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Table Styles */
         table {
             width: 50%;
-            margin: 20px auto;
+            margin: 60px auto 20px; /* Added top margin for the tabs */
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
         }
+
         th {
             background-color: #f0f0f0;
+        }
+
+        /* Tab Styles */
+        .tabs {
+            position: fixed; /* Fixed position to keep tabs at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            z-index: 100; /* Ensure tabs are on top */
+            text-align: center; /* Center the links */
+        }
+
+        .tabs a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+  <div class="tabs">
+    <a href="#">Tab 1</a>
+    <a href="#">Tab 2</a>
+    <a href="#">Tab 3</a>
+  </div>
     <h1>Noble Gases</h1>
     <table>
         <thead>
@@ -72,5 +108,14 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>Melting Points</h2>
+    <table>
+      </table>
+
+      <h2>Boiling Points</h2>
+      <table>
+      </table>
+
 </body>
 </html>

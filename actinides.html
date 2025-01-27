@@ -10,6 +10,34 @@
             background-color: #f0f0f0;
             margin: 20px;
         }
+        /* Tabs Styling */
+        .tabs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .tabs ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .tabs li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .tabs a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
         table {
             width: 80%;
             margin: 20px auto;
@@ -28,14 +56,40 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+         .points-header{
+            display: flex;
+            justify-content: space-around;
+         }
+        .points-header h3{
+            background-color: #656565;
+            color: white;
+            width: 40%;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <div class="tabs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="periodic_table.html">Periodic Table</a></li>
+            <li><a href="alkali_metals.html">Alkali Metals</a></li>
+            <li><a href="alkaline_earth_metals.html">Alkaline Earth Metals</a></li>
+            <li><a href="transition_metals.html">Transition Metals</a></li>
+            <li><a href="lanthanides.html">Lanthanides</a></li>
+            <li><a href="actinides.html">Actinides</a></li>
+            <li><a href="halogens.html">Halogens</a></li>
+            <li><a href="noble_gases.html">Noble Gases</a></li>
+        </ul>
+    </div>
     <h2>Actinides</h2>
     <table>
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Melting Point</th>
                 <th>Atomic Number</th>
                 <th>Symbol</th>
             </tr>
@@ -43,6 +97,7 @@
         <tbody>
             <tr>
                 <td>Actinium</td>
+                <td>1050</td>
                 <td>89</td>
                 <td>Ac</td>
             </tr>
@@ -118,5 +173,10 @@
             </tr>
         </tbody>
     </table>
+    <div class="points-header">
+    <h3>Melting Point</h3>
+    <h3>Boiling Point</h3>
+    </div>
+    
 </body>
 </html>

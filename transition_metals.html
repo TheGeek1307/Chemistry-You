@@ -7,10 +7,39 @@
     <style>
         body {
             font-family: sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
+            margin: 0; /* Remove default body margins */
+            padding-top: 60px; /* Add padding for fixed header */
+        }
+        .tabs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 100; /* Ensure tabs are on top */
+        }
+        .tabs a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+        .tabs a:hover {
+            background-color: #777;
         }
         table {
-            width: 80%;
+            width: 90%; /* Increased width */
+            max-width: 1200px; /* Limit maximum width */
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
             margin: 20px auto;
             border-collapse: collapse;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,13 +53,31 @@
             background-color: #4CAF50;
             color: white;
         }
+        .melt-boil {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .melt-boil > div {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
     </style>
 </head>
 <body>
-    <h1>Transition Metals</h1>
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="periodic_table.html">Periodic Table</a>
+    </div>
+    <h1>Transition Metals</h1> 
     <table>
         <thead>
             <tr>
@@ -38,6 +85,10 @@
                 <th>Atomic Number</th>
                 <th>Symbol</th>
             </tr>
+            <div class="melt-boil">
+                <div><h2>Melting Point</h2></div>
+                <div><h2>Boiling Point</h2></div>
+            </div>
         </thead>
         <tbody>
             <tr>
@@ -213,6 +264,7 @@
             <tr>
                 <td>Meitnerium</td>
                 <td>109</td>
+
                 <td>Mt</td>
             </tr>
         </tbody>
