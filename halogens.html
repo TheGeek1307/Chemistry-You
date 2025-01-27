@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halogens</title>
     <style>
+        .tabs {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            background-color: #6f42c1; /* Purple */
+            z-index: 100;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .tabs a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        .tabs a:hover {
+            background-color: #563d7c; /* Darker purple */
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,61 +34,32 @@
             color: #333;
         }
 
-        h1 {
-            text-align: center;
-            margin-top: 70px;
-        }
-
-        /* Tab Styles */
-        .tabs {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            background-color: #444;
-            z-index: 100;
-            padding: 0;
-            text-align: center;
-            justify-content: center;
-        }
-        .tabs a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
-
-        .tabs a:hover {
-            background-color: #666;
-        }
-
-        /* Table Styles */
         table {
-            width: 70%;
+            width: auto;
             margin: 20px auto;
             border-collapse: collapse;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
-        table th, table td {
+        th, td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
         }
 
-        table th {
-            background-color: #009879;
-            color: #ffffff;
+        th {
+            background-color: #6f42c1; /* Purple */
+            color: white;
         }
-        .container{ display: flex; justify-content: center; }
-        .melting, .boiling{ width: auto; }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
         }
-    </style>
-     <style>
-        
-        table {width: auto; max-width: none;}
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -81,36 +74,43 @@
         <a href="halogens.html">Halogens</a>
         <a href="noble_gases.html">Noble Gases</a>
     </div>
-    <h1>Halogens</h1>
-   <div class="container">
-        <table>
+    <h1>Halogen Group</h1>
+    <div class="container">
+        <table class="element-table">
             <thead>
                 <tr>
                     <th>Element</th>
                     <th>Atomic Number</th>
                     <th>Symbol</th>
-                    <th>Melting Point (°C)</th>
-                    <th>Boiling Point (°C)</th>
+                    <th>Melting Point</th>
+                    <th>Boiling Point</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Fluorine</td><td>9</td><td>F</td><td>-219.62</td><td>-188.12</td>
+                    <td>Fluorine</td>
+                    <td>9</td>
+                    <td>F</td>
+                    <td>-219.62 °C</td>
+                    <td>-188.12 °C</td>
                 </tr>
                 <tr>
-                    <td>Chlorine</td><td>17</td><td>Cl</td><td>-101.5</td><td>-34.04</td>
+                    <td>Chlorine</td>
+                    <td>17</td>
+                    <td>Cl</td>
+                    <td>-101.5 °C</td>
+                    <td>-34.04 °C</td>
                 </tr>
                 <tr>
-                    <td>Bromine</td><td>35</td><td>Br</td><td>-7.25</td><td>58.8</td>
+                    <td>Bromine</td>
+                    <td>35</td>
+                    <td>Br</td>
+                    <td>-7.25 °C</td>
+                    <td>58.8 °C</td>
                 </tr>
                 <tr>
-                    <td>Iodine</td><td>53</td><td>I</td><td>113.7</td><td>184.3</td>
-                </tr>
-                <tr>
-                    <td>Astatine</td><td>85</td><td>At</td><td>302.0</td><td>N/A</td>
-                </tr>
-                <tr>
-                    <td>Tennessine</td><td>117</td><td>Ts</td><td>350.0</td><td>N/A</td>
+                    <td>Iodine</td><td>53</td><td>I</td><td>113.7 °C</td><td>184.3 °C</td>
+                </tr><tr><td>Astatine</td><td>85</td><td>At</td><td>302.0 °C</td><td>N/A</td></tr><tr><td>Tennessine</td><td>117</td><td>Ts</td><td>350.0 °C</td><td>N/A</td>
                 </tr>
             </tbody>
         </table>

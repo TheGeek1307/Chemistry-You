@@ -6,7 +6,7 @@
     <title>Actinides</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #e0e0e0; /* Light gray background */
             margin: 0; /* Remove default margins */
         }
@@ -15,7 +15,7 @@
              position: fixed; /* Fixed position to stay at the top */
              top: 0;
             left: 0;
-            width: 100%; 
+            width: 100%;
             background-color: #4CAF50; /* Darker Green */
             padding: 5px 0;
             z-index: 100; /* Ensure it's on top of other content */
@@ -29,7 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 5px;
             
         }
 
@@ -41,17 +41,17 @@
         .tabs a {
             color: #FFF;
             text-decoration: none;
-            padding: 10px 10px;
-            border-radius: 8px;
+            padding: 5px 10px;
+            border-radius: 5px;
             transition: background-color 0.3s;
             font-weight: bold;
             background-color: rgba(0,0,0,0.1); /* Slightly transparent background */
             border: 1px solid #FFF; /* White border */
         }
 
-        .tabs a:hover {
-             background-color: #367C39; /* Hover effect */
-        }
+        .tabs a:hover { background-color: #367C39; /* Hover effect */ }
+
+        h2{text-align: center;}
         table {
             width: 80%;
             margin: 70px auto 20px;
@@ -61,7 +61,7 @@
             border-radius: 10px;
         }
 
-        th, td {
+         th, td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
@@ -74,14 +74,20 @@
         }
 
         tr:nth-child(even) {
-            background-color: #f8f8f8;
+            background-color: #f2f2f2; /* Slightly lighter gray for even rows */
         }
-        td,th {
+
+        th {
+           border: 1px solid black; /* Add a solid border to the header */
+        }
+
+        td {
             border: 1px solid black;
-        }
-        
+        } 
         .main-content {
             padding: 20px;
+
+
             margin: 20px auto;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -103,93 +109,94 @@
             <li><a href="noble_gases.html">Noble Gases</a></li>
         </ul>
     </div>
-    <h2 style="text-align: center; margin-top: 80px; margin-bottom:20px">Actinides</h2>
+    <h2>Actinides</h2>
     <table>
-        <thead >
+        <thead>
             <tr>
                 <th>Name</th>
                 <th>Symbol</th>
                 <th>Atomic Number</th>
-                <th>Melting Point</th>
-                <th>Boiling Point</th>
+                <th>Melting Point (°C)</th>
+                <th>Boiling Point (°C)</th>
             </tr>
-         </thead>
+        </thead>
         <tbody>
             <tr>
                 <td>Actinium</td>
                 <td>Ac</td>
                 <td>89</td>
-                <td>1050°C</td>
-                <td>3200°C</td>
+                <td>1050</td>
+                <td>3200</td>
             </tr>
             <tr>
                 <td>Thorium</td>
                 <td>Th</td>
                 <td>90</td>
-                <td>1750</td>
-                <td>4790</td>
+                <td>1750°C</td>
+                <td>4790°C</td>
             </tr>
             <tr>
                 <td>Protactinium</td>
                 <td>Pa</td>
                 <td>91</td>
-                <td>1568</td>
-                <td>4027</td>
+                <td>1568°C</td>
+                <td>4027°C</td>
             </tr>
             <tr>
                 <td>Uranium</td>
                 <td>U</td>
                 <td>92</td>
-                <td>1132</td>
-                <td>4131</td>
+                <td>1132°C</td>
+                <td>4131°C</td>
             </tr>
             <tr>
                 <td>Neptunium</td>
                 <td>Np</td>
                 <td>93</td>
-                <td>639</td>
-                <td>3902</td>
+                <td>639°C</td>
+                <td>3902°C</td>
             </tr>
             <tr>
                 <td>Plutonium</td>
                 <td>Pu</td>
                 <td>94</td>
-                <td>639</td>
-                <td>3228</td>
+                <td>639°C</td>
+                <td>3228°C</td>
             </tr>
             <tr>
                 <td>Americium</td>
                 <td>Am</td>
                 <td>95</td>
-                <td>1176</td>
-                <td>2607</td>
+                <td>1176°C</td>
+                <td>2607°C</td>
             </tr>
             <tr>
                 <td>Curium</td>
                 <td>Cm</td>
                 <td>96</td>
-                <td>1340</td>
-                <td>3110</td>
+                <td>1340°C</td>
+                <td>3110°C</td>
             </tr>
             <tr>
                 <td>Berkelium</td>
                 <td>Bk</td>
                 <td>97</td>
-                <td>1050°C</td>
-                <td>2627</td>
+                <td>1050</td>
+                <td>2627°C</td>
             </tr>
             <tr>
                 <td>Californium</td>
                 <td>Cf</td>
                 <td>98</td>
-                <td>900</td>
-                <td>1745°C</td>
-               </tr>
+                <td>900°C</td>
+                <td>1745</td>
             </tr>
             <tr>
                 <td>Einsteinium</td>
-                <td>99</td>
                 <td>Es</td>
+                <td>99</td>
+                <td>860</td>
+                <td>986</td>
             </tr>
             <tr>
                 <td>Fermium</td>
@@ -210,14 +217,13 @@
                 <td>Lawrencium</td>
                 <td>103</td>
                 <td>Lr</td>
+                <td>1627</td>
+                <td>Unknown</td>
             </tr>
         </tbody>
-     </table>
-
- <div style="text-align: center; margin-top: 20px;">
-        <p>Note: All melting and boiling points are in degrees Celsius (°C).</p>
-     </div>
-
-
+    </table>
+    <div style="text-align: center; margin-top: 20px;">
+         <p>Note: All melting and boiling points are in degrees Celsius (°C).</p>
+    </div>
 </body>
 </html>

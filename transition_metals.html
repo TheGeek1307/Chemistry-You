@@ -1,95 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition Metals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alkali Metals</title>
     <style>
-        body { /* Common style for all pages */
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
-          background-color: #f8f8f8; /* Light gray background */
-          color: #333; /* Dark text for readability */
-          margin: 0;
-          padding: 0;
-          line-height: 1.6; /* Improved line spacing */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .tabs {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2980b9;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      .tabs a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        margin: 0 5px;
+        border-radius: 4px;
+        background-color: #3498db;
+        transition: background-color 0.3s ease;
+      }
+      .tabs a:hover {
+        background-color: #1f618d;
+      }
+      main {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      table {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
         }
-        h1, h2, h3 {
-          color: #2c3e50; /* Darker color for headings */
-          font-weight: bold;
-          text-align: center;
-          margin-top: 10px;
-        }
-
-        /* Tab Styles */
-        .tabs {
-          position: fixed; /* Fixed position */
-          top: 0;
-          width: 100%;
-          background-color: #2980b9; /* Blue color */
-          color: white;
-          padding: 10px 0;
-          text-align: center;
-          z-index: 100; /* Ensure on top */
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-        }
-        .tabs a {
-          color: white;
-          text-decoration: none;
-          padding: 8px 12px; /* Adjusted padding for smaller tabs */
-          margin: 0 5px; /* Adjusted margin for spacing */
-          border-radius: 4px;
-          background-color: #3498db; /* Lighter blue */
-          transition: background-color 0.3s ease; /* Smooth hover */
-        }
-        .tabs a:hover {
-          background-color: #1f618d; /* Darker blue on hover */
-        }
-        /* Content styles */
-        main {
-          padding-top: 60px; /* Push down to make room for the tabs */
-          padding-bottom: 20px;
-          text-align: center;
-        }
-        /* Table Styles */
-        table {
-          width: 90%; /* Responsive width */
-          max-width: 1200px; /* Limit max width */
-          margin: 20px auto; /* Center and add space around */
-          border-collapse: collapse;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
-          overflow: hidden;
-        }
-        th, td {
-          border: 1px solid #ddd; /* Lighter border */
-          padding: 12px; /* Increase padding */
-          text-align: center;
-        }
-
-        th {
-          background-color: #3498db; /* Blue header */
-          color: white;
-          font-weight: bold;
-        }
-
-        tbody tr:nth-child(even) {
-          background-color: #f2f2f2; /* Alternate row color */
-        }
-        td.center, th.center {
-          text-align: center;
-        }
-        .highlight {
-          font-weight: bold;
-        }
-        .small-text {
-          font-size: 0.8em;
-        }
-        .table-container {
-          overflow-x: auto; /* Enables horizontal scrolling if table overflows */
-        }
-
+      th {
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      td.center,
+      th.center {
+        text-align: center;
+      }
+      .highlight {
+        font-weight: bold;
+      }
+      .small-text {
+        font-size: 0.8em;
+      }
+      .table-container {
+        overflow-x: auto;
+      }
     </style>
-    
 </head>
 <body>
     <div class="tabs">
@@ -98,20 +93,25 @@
         <a href="alkali_metals.html">Alkali Metals</a>
         <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
         <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
     </div>
-    <h1>Transition Metals</h1> 
-    <table>
+    <h1>Transition Metals</h1>
+    <main>
+      <table>
         <thead>
-            <tr>
+          <tr>
                 <th>Name</th>
-                <th>Atomic Number</th>
-                <th>Symbol</th>
+            <th>Atomic Number</th>
+            <th>Symbol</th>
                 <th class="center">Melting Point</th>
                 <th class="center">Boiling Point</th>
-            </div>
+          </tr>
         </thead>
         <tbody>
-            <tr>
+          <tr>
                 <td>Scandium</td>
                 <td>21</td>
                 <td class="center">Sc</td>
@@ -119,245 +119,246 @@
                 <td class="center">2836°C</td>
             </tr>
             <tr>
-                <td>Titanium</td>
-                <td>22</td>
-                <td class="center">Ti</td>
-                <td class="center">1668°C</td>
-                <td class="center">3287°C</td>
-            </tr>
-            <tr>
-                <td>Vanadium</td>
-                <td>23</td>
-                <td class="center">V</td>
-                <td class="center">1910°C</td>
-                <td class="center">3407°C</td>
-            </tr>
-            <tr>
-                <td>Chromium</td>
-                <td>24</td>
-                <td class="center">Cr</td>
-                <td class="center">1907°C</td>
-                <td class="center">2671°C</td>
-            </tr>
-            <tr>
-                <td>Manganese</td>
-                <td>25</td>
-                <td class="center">Mn</td>
-                <td class="center">1246°C</td>
-                <td class="center">2061°C</td>
-            </tr>
-            <tr>
-                <td>Iron</td>
-                <td>26</td>
-                <td class="center">Fe</td>
-                <td class="center">1538°C</td>
-                <td class="center">2861°C</td>
-            </tr>
-            <tr>
-                <td>Cobalt</td>
-                <td>27</td>
-                <td class="center">Co</td>
-                <td class="center">1495°C</td>
-                <td class="center">2927°C</td>
-            </tr>
-            <tr>
-                <td>Nickel</td>
-                <td>28</td>
-                <td class="center">Ni</td>
-                <td class="center">1455°C</td>
-                <td class="center">2913°C</td>
-            </tr>
-            <tr>
-                <td>Copper</td>
-                <td>29</td>
-                <td class="center">Cu</td>
-                <td class="center">1085°C</td>
-                <td class="center">2562°C</td>
-            </tr>
-            <tr>
-                <td>Zinc</td>
-                <td>30</td>
-                <td class="center">Zn</td>
-                <td class="center">420°C</td>
-                <td class="center">907°C</td>
-            </tr>
-            <tr>
-                <td>Yttrium</td>
-                <td>39</td>
-                <td class="center">Y</td>
-                <td class="center">1526°C</td>
-                <td class="center">3347°C</td>
-            </tr>
-            <tr>
-                <td>Zirconium</td>
-                <td>40</td>
-                <td class="center">Zr</td>
-                <td class="center">1855°C</td>
-                <td class="center">4409°C</td>
-            </tr>
-            <tr>
-                <td>Niobium</td>
-                <td>41</td>
-                <td class="center">Nb</td>
-                <td class="center">2477°C</td>
-                <td class="center">4744°C</td>
-            </tr>
-            <tr>
-                <td>Molybdenum</td>
-                <td>42</td>
-                <td class="center">Mo</td>
-                <td class="center">2623°C</td>
-                <td class="center">4639°C</td>
-            </tr>
-            <tr>
-                <td>Technetium</td>
-                <td>43</td>
-                <td class="center">Tc</td>
-                <td class="center">2157°C</td>
-                <td class="center">4265°C</td>
-            </tr>
-            <tr>
-                <td>Ruthenium</td>
-                <td>44</td>
-                <td class="center">Ru</td>
-                <td class="center">2334°C</td>
-                <td class="center">4150°C</td>
-            </tr>
-            <tr>
-                <td>Rhodium</td>
-                <td>45</td>
-                <td class="center">Rh</td>
-                <td class="center">1964°C</td>
-                <td class="center">3695°C</td>
-            </tr>
-            <tr>
-                <td>Palladium</td>
-                <td>46</td>
-                <td class="center">Pd</td>
-                <td class="center">1555°C</td>
-                <td class="center">2963°C</td>
-            </tr>
-            <tr>
-                <td>Silver</td>
-                <td>47</td>
-                <td class="center">Ag</td>
-                <td class="center">962°C</td>
-                <td class="center">2162°C</td>
-            </tr>
-            <tr>
-                <td>Cadmium</td>
-                <td>48</td>
-                <td class="center">Cd</td>
-                <td class="center">321°C</td>
-                <td class="center">767°C</td>
-            </tr>
-            <tr>
-                <td>Hafnium</td>
-                <td>72</td>
-                <td class="center">Hf</td>
-                <td class="center">2233°C</td>
-                <td class="center">4603°C</td>
-            </tr>
-            <tr>
-                <td>Tantalum</td>
-                <td>73</td>
-                <td class="center">Ta</td>
-                <td class="center">3017°C</td>
-                <td class="center">5458°C</td>
-            </tr>
-            <tr>
-                <td>Tungsten</td>
-                <td>74</td>
-                <td class="center">W</td>
-                <td class="center">3422°C</td>
-                <td class="center">5555°C</td>
-            </tr>
-            <tr>
-                <td>Rhenium</td>
-                <td>75</td>
-                <td class="center">Re</td>
-                <td class="center">3186°C</td>
-                <td class="center">5596°C</td>
-            </tr>
-            <tr>
-                <td>Osmium</td>
-                <td>76</td>
-                <td class="center">Os</td>
-                <td class="center">3033°C</td>
-                <td class="center">5012°C</td>
-            </tr>
-            <tr>
-                <td>Iridium</td>
-                <td>77</td>
-                <td class="center">Ir</td>
-                <td class="center">2466°C</td>
-                <td class="center">4428°C</td>
-            </tr>
-            <tr>
-                <td>Platinum</td>
-                <td>78</td>
-                <td class="center">Pt</td>
-                <td class="center">1768°C</td>
-                <td class="center">3825°C</td>
-            </tr>
-            <tr>
-                <td>Gold</td>
-                <td>79</td>
-                <td class="center">Au</td>
-                <td class="center">1064°C</td>
-                <td class="center">2856°C</td>
-            </tr>
-            <tr>
-                <td>Mercury</td>
-                <td>80</td>
-                <td class="center">Hg</td>
-                <td class="center">-39°C</td>
-                <td class="center">357°C</td>
-            </tr>
-            <tr>
-                <td>Rutherfordium</td>
-                <td>104</td>
-                <td class="center">Rf</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Dubnium</td>
-                <td>105</td>
-                <td class="center">Db</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Seaborgium</td>
-                <td>106</td>
-                <td class="center">Sg</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Bohrium</td>
-                <td>107</td>
-                <td class="center">Bh</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Hassium</td>
-                <td>108</td>
-                <td class="center">Hs</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Meitnerium</td>
-                <td>109</td>
-
-                <td class="center">Mt</td>
-                <td>N/A</td>
-                <td>N/A</td>
-            </tr>
+          <tr>
+            <td>Titanium</td>
+            <td>22</td>
+            <td class="center">Ti</td>
+            <td class="center">1668°C</td>
+            <td class="center">3287°C</td>
+          </tr>
+          <tr>
+            <td>Vanadium</td>
+            <td>23</td>
+            <td class="center">V</td>
+            <td class="center">1910°C</td>
+            <td class="center">3407°C</td>
+          </tr>
+          <tr>
+            <td>Chromium</td>
+            <td>24</td>
+            <td class="center">Cr</td>
+            <td class="center">1907°C</td>
+            <td class="center">2671°C</td>
+          </tr>
+          <tr>
+            <td>Manganese</td>
+            <td>25</td>
+            <td class="center">Mn</td>
+            <td class="center">1246°C</td>
+            <td class="center">2061°C</td>
+          </tr>
+          <tr>
+            <td>Iron</td>
+            <td>26</td>
+            <td class="center">Fe</td>
+            <td class="center">1538°C</td>
+            <td class="center">2861°C</td>
+          </tr>
+          <tr>
+            <td>Cobalt</td>
+            <td>27</td>
+            <td class="center">Co</td>
+            <td class="center">1495°C</td>
+            <td class="center">2927°C</td>
+          </tr>
+          <tr>
+            <td>Nickel</td>
+            <td>28</td>
+            <td class="center">Ni</td>
+            <td class="center">1455°C</td>
+            <td class="center">2913°C</td>
+          </tr>
+          <tr>
+            <td>Copper</td>
+            <td>29</td>
+            <td class="center">Cu</td>
+            <td class="center">1085°C</td>
+            <td class="center">2562°C</td>
+          </tr>
+          <tr>
+            <td>Zinc</td>
+            <td>30</td>
+            <td class="center">Zn</td>
+            <td class="center">420°C</td>
+            <td class="center">907°C</td>
+          </tr>
+          <tr>
+            <td>Yttrium</td>
+            <td>39</td>
+            <td class="center">Y</td>
+            <td class="center">1526°C</td>
+            <td class="center">3347°C</td>
+          </tr>
+          <tr>
+            <td>Zirconium</td>
+            <td>40</td>
+            <td class="center">Zr</td>
+            <td class="center">1855°C</td>
+            <td class="center">4409°C</td>
+          </tr>
+          <tr>
+            <td>Niobium</td>
+            <td>41</td>
+            <td class="center">Nb</td>
+            <td class="center">2477°C</td>
+            <td class="center">4744°C</td>
+          </tr>
+          <tr>
+            <td>Molybdenum</td>
+            <td>42</td>
+            <td class="center">Mo</td>
+            <td class="center">2623°C</td>
+            <td class="center">4639°C</td>
+          </tr>
+          <tr>
+            <td>Technetium</td>
+            <td>43</td>
+            <td class="center">Tc</td>
+            <td class="center">2157°C</td>
+            <td class="center">4265°C</td>
+          </tr>
+          <tr>
+            <td>Ruthenium</td>
+            <td>44</td>
+            <td class="center">Ru</td>
+            <td class="center">2334°C</td>
+            <td class="center">4150°C</td>
+          </tr>
+          <tr>
+            <td>Rhodium</td>
+            <td>45</td>
+            <td class="center">Rh</td>
+            <td class="center">1964°C</td>
+            <td class="center">3695°C</td>
+          </tr>
+          <tr>
+            <td>Palladium</td>
+            <td>46</td>
+            <td class="center">Pd</td>
+            <td class="center">1555°C</td>
+            <td class="center">2963°C</td>
+          </tr>
+          <tr>
+            <td>Silver</td>
+            <td>47</td>
+            <td class="center">Ag</td>
+            <td class="center">962°C</td>
+            <td class="center">2162°C</td>
+          </tr>
+          <tr>
+            <td>Cadmium</td>
+            <td>48</td>
+            <td class="center">Cd</td>
+            <td class="center">321°C</td>
+            <td class="center">767°C</td>
+          </tr>
+          <tr>
+            <td>Hafnium</td>
+            <td>72</td>
+            <td class="center">Hf</td>
+            <td class="center">2233°C</td>
+            <td class="center">4603°C</td>
+          </tr>
+          <tr>
+            <td>Tantalum</td>
+            <td>73</td>
+            <td class="center">Ta</td>
+            <td class="center">3017°C</td>
+            <td class="center">5458°C</td>
+          </tr>
+          <tr>
+            <td>Tungsten</td>
+            <td>74</td>
+            <td class="center">W</td>
+            <td class="center">3422°C</td>
+            <td class="center">5555°C</td>
+          </tr>
+          <tr>
+            <td>Rhenium</td>
+            <td>75</td>
+            <td class="center">Re</td>
+            <td class="center">3186°C</td>
+            <td class="center">5596°C</td>
+          </tr>
+          <tr>
+            <td>Osmium</td>
+            <td>76</td>
+            <td class="center">Os</td>
+            <td class="center">3033°C</td>
+            <td class="center">5012°C</td>
+          </tr>
+          <tr>
+            <td>Iridium</td>
+            <td>77</td>
+            <td class="center">Ir</td>
+            <td class="center">2466°C</td>
+            <td class="center">4428°C</td>
+          </tr>
+          <tr>
+            <td>Platinum</td>
+            <td>78</td>
+            <td class="center">Pt</td>
+            <td class="center">1768°C</td>
+            <td class="center">3825°C</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>79</td>
+            <td class="center">Au</td>
+            <td class="center">1064°C</td>
+            <td class="center">2856°C</td>
+          </tr>
+          <tr>
+            <td>Mercury</td>
+            <td>80</td>
+            <td class="center">Hg</td>
+            <td class="center">-39°C</td>
+            <td class="center">357°C</td>
+          </tr>
+          <tr>
+            <td>Rutherfordium</td>
+            <td>104</td>
+            <td class="center">Rf</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Dubnium</td>
+            <td>105</td>
+            <td class="center">Db</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Seaborgium</td>
+            <td>106</td>
+            <td class="center">Sg</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Bohrium</td>
+            <td>107</td>
+            <td class="center">Bh</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Hassium</td>
+            <td>108</td>
+            <td class="center">Hs</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Meitnerium</td>
+            <td>109</td>
+            <td class="center">Mt</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
         </tbody>
-    </table>
+      </table>
+    </main>
 </body>
 </html>
