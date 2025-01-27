@@ -12,16 +12,21 @@
         h1 {
              text-align: center; 
         }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
         .tab-container {
             display: flex;
-            justify-content: center;
-            position: absolute; /* Changed to absolute positioning */
-            top: 0; /* Positioned at the top */
-            width: 100%;
-             left: 0;
-            background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+            gap: 10px; /* Space between tabs */
+            margin-left: auto; /* Aligns tabs to the right */
+             
         }
-       table {
+         table {
             width: 90%;
             margin: 50px auto 20px; /* Adjusted top margin to account for tabs */
             border-collapse: collapse;
@@ -31,8 +36,10 @@
             padding: 8px;
             text-align: center;
         }
-        th {
-            background-color: #f0f0f0;   
+        thead th {
+            background-color: #f0f0f0;
+            position: sticky; /* Keeps the header row always visible */
+            top: 0; /* Stick to the top */
         }
        tr:nth-child(even) {
 
@@ -42,12 +49,12 @@
             background-color: #f8f8f8;
         }
         .tab-button {
-            padding: 5px 10px; /* Smaller padding */
+            padding: 5px 10px;
             border: 1px solid #4CAF50; /* Green border */
             background-color: #f0f0f0; /* Green background */
-             color: #4CAF50; /* White text */
+            color: #4CAF50; /* White text */
             cursor: pointer;
-             margin: 5px; /* Smaller margins */
+            margin: 0; /* Smaller margins */
             text-decoration: none; /* Remove underline from links */
             display: inline-block; /* Make sure padding affects dimensions */
             border-radius: 25px; /* Rounded corners */
@@ -61,17 +68,20 @@
             font-size: 0.8em;
             color: #555;
         }
-        .boiling-point::before {
-            content: "Boiling Point: ";
-            font-weight: bold;
-}
+       
     </style>
     
 </head>
 <body>
-    <div class="tab-container">
+    <div class="header-container">
+        <h1>The Periodic Table</h1>
+        <div class="tab-container">
         <a href="alkali_metals.html" class="tab-button">Alkali Metals</a>
         <a href="alkaline_earth_metals.html" class="tab-button">Alkaline Earth Metals</a>
+         <a href="transition_metals.html" class="tab-button">Transition Metals</a>
+         <a href="lanthanides.html" class="tab-button">Lanthanides</a>
+         <a href="actinides.html" class="tab-button">Actinides</a>
+         
         <a href="halogens.html" class="tab-button">Halogens</a>
         <a href="noble_gases.html" class="tab-button">Noble Gases</a>
         <a href="transition_metals.html" class="tab-button">Transition Metals</a>
@@ -81,11 +91,11 @@
     <table id="periodic-table" >
          
         <thead>
-            <tr>
+             <tr>
                 <th>Atomic Number</th>
                 <th>Symbol</th> 
                 <th>Name</th>
-                <th>Atomic Weight</th>
+               <th>Atomic Weight</th>
                 <th>Melting Point (°C)</th>
                 <th>Boiling Point (°C)</th>
             </tr>
