@@ -52,7 +52,14 @@
         .tabs a:hover { background-color: #367C39; /* Hover effect */ }
 
         h2{text-align: center;}
-        table {
+        h1{
+            text-align: center;
+             margin: 20px auto;
+            
+        }
+        
+        .metal_table {
+            
             width: 80%;
             margin: 70px auto 20px;
             border-collapse: collapse;
@@ -93,7 +100,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+         .metal_container {
+            display: flex;
+            justify-content: center; /* Center the table horizontally */
+            width: 100%; /* Full width of the viewport */
+        }
     </style>
+    
+    
+    
+    
+
+
 </head>
 <body>
     <div class="tabs">
@@ -109,8 +127,12 @@
             <li><a href="noble_gases.html">Noble Gases</a></li>
         </ul>
     </div>
-    <h2>Actinides</h2>
-    <table>
+    
+    
+    <h1>Actinides</h1>
+     <div class="metal_container">
+       <table class="metal_table">
+    
         <thead>
             <tr>
                 <th>Name</th>
@@ -221,9 +243,10 @@
                 <td>Unknown</td>
             </tr>
         </tbody>
-    </table>
+       </table>
+    </div>
     <div style="text-align: center; margin-top: 20px;">
-         <p>Note: All melting and boiling points are in degrees Celsius (°C).</p>
+        <p>Note: All melting and boiling points are in degrees Celsius (°C).</p>
     </div>
 </body>
 </html>

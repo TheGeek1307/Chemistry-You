@@ -1,117 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noble Gases</title>
-    <style>
-        /* Base Styles */
-       body {
-          font-family: 'Arial', sans-serif;
-          background-color: #f0f0f0;
-          margin: 0;
-          padding: 0;
-          color: #333;
-          line-height: 1.6;
-          display: flex; /* Use flexbox to manage content layout */
-          flex-direction: column; /* Stack children vertically */
-          align-items: center; /* Center items horizontally */
-          min-height: 100vh; /* Ensure body takes up at least full viewport height */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noble Gases</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      display: flex; /* Use flexbox to manage content layout */
+      flex-direction: column; /* Stack children vertically */
+      align-items: center; /* Center items horizontally */
+      min-height: 100vh; /* Ensure body takes up at least full viewport height */
+    }
 
-        h1 {
-          text-align: center;
-          margin-top: 20px; /* Add some space above the header */
-          margin-bottom: 20px;
-        }
+    .tabs {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0; /* Light gray background for tabs */
+      z-index: 100; /* Ensure tabs are on top */
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center; /* Center tabs horizontally */
+    }
 
+    .tabs a {
+      color: #333; /* Dark text color */
+      padding: 8px 15px;
+      margin: 0 5px;
+      text-decoration: none;
+      border: 1px solid #ddd; /* Light border */
+      border-radius: 20px;
+      background-color: #fff; /* White background for tab links */
+      transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+      font-size: 14px; /* Smaller font size */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
 
-        /* Table Styles */
-        table {
-          width: 80%;
-          border-collapse: collapse;
-          margin-bottom: 20px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          border-radius: 10px;
-          overflow: hidden;
-        }
-
-        th, td {
-          border: 1px solid #ddd;
-          padding: 12px 15px;
-          text-align: center;
-        }
-
-        tbody tr:nth-child(even) {
-          background-color: #f9f9f9;
-        }
-
-        tbody tr:hover {
-          background-color: #f0f0f0;
-        }
-
-        th {
-          background-color: #e0e0e0;
-          color: #333;
-        }
-
-        .noblegas {
-          background-color: #cce6ff; 
-        }        
-        .noblegas-table {
-          margin-bottom: 20px;
-        }
-
-        .tabs {
-           position: fixed;
-           top: 0;
-           left: 0;
-           width: 100%;
-           background-color: #f0f0f0; /* Light gray background for tabs */
-           z-index: 100; /* Ensure tabs are on top */
-           padding: 10px 0;
-           text-align: center;
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-           display: flex;
-           justify-content: center; /* Center tabs horizontally */
-        }
-        
-        .tabs a {
-           color: #333; /* Dark text color */
-           padding: 8px 15px;
-           margin: 0 5px;
-           text-decoration: none;
-           border: 1px solid #ddd; /* Light border */
-           border-radius: 20px;
-           background-color: #fff; /* White background for tab links */
-           transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-           font-size: 14px; /* Smaller font size */
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-        }
-        
-        .tabs a:hover {
-           background-color: #e0e0e0; /* Light gray on hover */
-           color: #000; /* Black text on hover */
-        }
-
-    </style>
-    
-
-      
-    
-    
-
-
+    .tabs a:hover {
+      background-color: #e0e0e0; /* Light gray on hover */
+      color: #000; /* Black text on hover */
+    }
+  </style>
 </head>
 <body>
   <div class="tabs">
-     <a href="index.html">Periodic Table</a>
-     <a href="periodic_table.html">Elements</a>
-     <a href="noble_gases.html">Noble Gases</a>
-     
-  </div> 
-    <h1>Noble Gases</h1>
-    <table class="noblegas-table">
+    <a href="index.html">Periodic Table</a>
+    <a href="periodic_table.html">Elements</a>
+    <a href="noble_gases.html">Noble Gases</a>
+  </div>
+  <h1>Noble Gases</h1>
+  <table class="noblegas-table">
         <thead>
             <tr class="noblegas">
                 <th>Name</th>

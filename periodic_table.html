@@ -7,6 +7,67 @@
    
     <style>
         body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+         .tabs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 80px auto 20px; /* Adjusted top margin to accommodate tabs */
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+        .tabs a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333; /* Black text for tabs */
+            font-weight: bold;
+            padding: 5px 10px; /* Reduced padding for smaller tabs */
+            background-color: #f8f8f8; /* Light background for tabs */
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+           
+            border-radius: 5px; /* Add border-radius */
+            
+        }
+       .tabs a:hover {
+            background-color: #d0d0d0;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-top: 100px; /* Adjust margin for fixed tabs */
+            color: #333;
+        }
             margin: 0; /* Remove default body margins */
         }
         .page-title {
@@ -71,14 +132,37 @@
             color: #555;
             display: block;
         }
+        /* Alternating row colors */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect on table rows */
+        tbody tr:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
        
     </style>
     
 </head>
 <body>
-    <div class="header-container">
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="periodic_table.html">Periodic Table</a>
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
+    </div>
+   
+    
+   <div class="header-container">
        <div class="page-title">
-        <h1>The Periodic Table</h1>
+       <div class="tabs"> <a href="periodic_table.html">The Periodic Table</a></div>
         <div class="tab-container">
         <a href="alkali_metals.html" class="tab-button">Alkali Metals</a>
         <a href="alkaline_earth_metals.html" class="tab-button">Alkaline Earth Metals</a>
