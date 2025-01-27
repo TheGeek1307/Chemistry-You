@@ -7,20 +7,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 20px;
+            background-color: #e0e0e0; /* Light gray background */
+            margin: 0; /* Remove default margins */
         }
         /* Tabs Styling */
         .tabs {
-            position: absolute;
-            top: 0;
-            left: 0;
+             position: fixed; /* Fixed position to stay at the top */
+             top: 0;
+             left: 0;
             width: 100%;
             background-color: #333;
             padding: 10px 0;
-            z-index: 10;
-        }
+            z-index: 100; /* Ensure it's on top of other content */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a subtle shadow */
+            
 
+        }
+        
+        
         .tabs ul {
             list-style: none;
             margin: 0;
@@ -36,22 +40,32 @@
         .tabs a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
+
+        .tabs a:hover {
+            background-color: #555;
+        }
+
         table {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%; /* Slightly wider */
+            margin: 80px auto 20px; /* Top margin to make space for the fixed tabs, increased margins */
             border-collapse: collapse;
             background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a shadow to the table */
         }
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+            border: 1px solid #bbb; /* Darker borders */
+            padding: 12px; /* Increased padding */
             text-align: center;
+            
         }
         th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #007BFF; /* Blue header */
+            color: white; /* White text for headers */
+            font-weight: bold; /* Bold headers */
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
@@ -59,12 +73,17 @@
          .points-header{
             display: flex;
             justify-content: space-around;
+            width: 90%;
+            margin: auto;
          }
         .points-header h3{
-            background-color: #656565;
+            background-color: #007BFF;
             color: white;
-            width: 40%;
+            width: 45%;
             margin: 0;
+            border: 1px solid #bbb;
+
+            border-radius: 10px;
             padding: 10px;
             text-align: center;
         }
@@ -84,67 +103,87 @@
             <li><a href="noble_gases.html">Noble Gases</a></li>
         </ul>
     </div>
-    <h2>Actinides</h2>
+    <h2 style="text-align: center; margin-top: 100px; margin-bottom:20px">Actinides</h2>
     <table>
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Melting Point</th>
-                <th>Atomic Number</th>
                 <th>Symbol</th>
+                <th>Atomic Number</th>
+                <th>Melting Point (°C)</th>
+                <th>Boiling Point (°C)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Actinium</td>
-                <td>1050</td>
-                <td>89</td>
                 <td>Ac</td>
+                <td>89</td>
+                <td>1050</td>
+                <td>3200</td>
             </tr>
             <tr>
                 <td>Thorium</td>
-                <td>90</td>
                 <td>Th</td>
+                <td>90</td>
+                <td>1750</td>
+                <td>4790</td>
             </tr>
             <tr>
                 <td>Protactinium</td>
-                <td>91</td>
                 <td>Pa</td>
+                <td>91</td>
+                <td>1568</td>
+                <td>4027</td>
             </tr>
             <tr>
                 <td>Uranium</td>
-                <td>92</td>
                 <td>U</td>
+                <td>92</td>
+                <td>1132</td>
+                <td>4131</td>
             </tr>
             <tr>
                 <td>Neptunium</td>
-                <td>93</td>
                 <td>Np</td>
+                <td>93</td>
+                <td>639</td>
+                <td>3902</td>
             </tr>
             <tr>
                 <td>Plutonium</td>
-                <td>94</td>
                 <td>Pu</td>
+                <td>94</td>
+                <td>639</td>
+                <td>3228</td>
             </tr>
             <tr>
                 <td>Americium</td>
-                <td>95</td>
                 <td>Am</td>
+                <td>95</td>
+                <td>1176</td>
+                <td>2607</td>
             </tr>
             <tr>
                 <td>Curium</td>
-                <td>96</td>
                 <td>Cm</td>
+                <td>96</td>
+                <td>1340</td>
+                <td>3110</td>
             </tr>
             <tr>
                 <td>Berkelium</td>
-                <td>97</td>
                 <td>Bk</td>
+                <td>97</td>
+                <td>1050</td>
+                <td>2627</td>
             </tr>
             <tr>
                 <td>Californium</td>
-                <td>98</td>
                 <td>Cf</td>
+                <td>98</td>
+                <td>900</td>
+                <td>1745</td>
             </tr>
             <tr>
                 <td>Einsteinium</td>
@@ -174,9 +213,10 @@
         </tbody>
     </table>
     <div class="points-header">
-    <h3>Melting Point</h3>
-    <h3>Boiling Point</h3>
+        <h3>Melting Point</h3>
+        <h3>Boiling Point</h3>
     </div>
-    
+
+
 </body>
 </html>

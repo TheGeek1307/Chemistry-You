@@ -7,14 +7,15 @@
     <style>
         table {
             width: 90%;
-            margin: 80px auto 20px auto;
+            margin: 100px auto 20px auto; /* Increased top margin */
             border-collapse: collapse;
         }
         
         th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
+            font-size: 14px;
         }
 
         th {
@@ -25,29 +26,45 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            background-color: #f0f0f0;
-            padding: 10px;
-            z-index: 100; /* Ensure tabs are on top */
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            width: 100%;
+            background-color: #333; /* Dark background for better contrast */
+            padding: 15px 0;
+            z-index: 1000; /* High z-index to ensure it's always on top */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
         }
-
         .tabs a {
             text-decoration: none;
-            color: black;
-            padding: 5px 10px;
-            border: 1px solid black;
-            border-radius: 5px;
+            color: #fff; /* White text */
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #555; /* Darker border */
+            border-radius: 25px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            font-weight: bold;
+        }
+        .tabs a:hover {
+            background-color: #555;
+            color: #fff;
         }
 
         .tab-container {
             margin-top: 60px; /* Adjust for height of tabs */
         }
 
-        .point-header {
+        h2 {
+            text-align: center;
+            margin-top: 80px;
+            color: #333;
+        }
+        .section-header {
             font-weight: bold;
             margin-top: 20px;
+            color: #333;
+        }
+        body{
+            font-family: sans-serif;
         }
     </style>
 </head>
@@ -55,19 +72,19 @@
 
     <h2>Lanthanides</h2>
 
-    <table>
-        <div class="tabs">
-            <a href="index.html">Home</a>
-            <a href="periodic_table.html">Periodic Table</a>
-            <a href="alkali_metals.html">Alkali Metals</a>
-            <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
-            <a href="transition_metals.html">Transition Metals</a>
-            <a href="lanthanides.html">Lanthanides</a>
-            <a href="actinides.html">Actinides</a>
-            <a href="halogens.html">Halogens</a>
-            <a href="noble_gases.html">Noble Gases</a>
-        </div>
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="periodic_table.html">Periodic Table</a>
+        <a href="alkali_metals.html">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html">Alkaline Earth Metals</a>
+        <a href="transition_metals.html">Transition Metals</a>
+        <a href="lanthanides.html">Lanthanides</a>
+        <a href="actinides.html">Actinides</a>
+        <a href="halogens.html">Halogens</a>
+        <a href="noble_gases.html">Noble Gases</a>
+    </div>
 
+    
     <div class="tab-container">
 
     <table>
@@ -178,9 +195,9 @@
         </tbody>
     </table>
 
-    <h3 class="point-header">Melting Points</h3>
+    <h3 class="section-header">Melting Points</h3>
     <p>Melting point data in the first table above.</p>
-    <h3 class="point-header">Boiling Points</h3>
+    <h3 class="section-header">Boiling Points</h3>
     <p>Boiling point data in the first table above.</p>
 
 </body>

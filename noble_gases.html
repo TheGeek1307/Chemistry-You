@@ -7,26 +7,43 @@
     <style>
         /* Base Styles */
         body {
-            font-family: sans-serif;
-            background-color: lightblue;
-            margin: 0; /* Remove default body margins */
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
         }
 
         h1, h2 {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         /* Table Styles */
         table {
-            width: 50%;
-            margin: 60px auto 20px; /* Added top margin for the tabs */
+            width: 80%;
+            margin: 80px auto 20px;
             border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
+
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        
+        tbody tr:hover {
+            background-color: #e9e9e9;
+
         }
 
         th {
@@ -35,7 +52,7 @@
 
         /* Tab Styles */
         .tabs {
-            position: fixed; /* Fixed position to keep tabs at the top */
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -43,20 +60,41 @@
             color: white;
             padding: 10px 0;
             z-index: 100; /* Ensure tabs are on top */
-            text-align: center; /* Center the links */
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .tabs a {
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-decoration: none;
-            margin: 0 5px;
-            border-radius: 5px;
+            margin: 0 10px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .tabs a:hover {
+            background-color: #555;
+        }
+        .noblegas {
+          background-color: #cce6ff; 
+        }
+
+        .melt {
+          background-color: #ffcccc;
+        }
+
+        .boil {
+          background-color: #ccffcc;
         }
     </style>
 </head>
 <body>
-  <div class="tabs">
+  <div class="tabs"> 
+    <a href="index.html">Periodic Table</a>
+    <a href="periodic_table.html">Elements</a>
+    <a href="noble_gases.html">Noble Gases</a>
     <a href="#">Tab 1</a>
     <a href="#">Tab 2</a>
     <a href="#">Tab 3</a>
@@ -64,7 +102,7 @@
     <h1>Noble Gases</h1>
     <table>
         <thead>
-            <tr>
+            <tr class="noblegas">
                 <th>Name</th>
                 <th>Atomic Number</th>
                 <th>Symbol</th>
@@ -111,11 +149,48 @@
 
     <h2>Melting Points</h2>
     <table>
+      <thead class="melt">
+        <tr>
+          <th>Name</th>
+          <th>Melting Point (K)</th>
+          <th>Melting Point (°C)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Helium</td>
+          <td>0.95</td>
+          <td>-272.20</td>
+        </tr>
+        <tr>
+          <td>Neon</td>
+          <td>24.56</td>
+          <td>-248.59</td>
+        </tr>
+        <tr>
+          <td>Argon</td>
+          <td>83.81</td>
+          <td>-189.34</td>
+        </tr>
+      </tbody>
       </table>
 
       <h2>Boiling Points</h2>
       <table>
+        <thead class="boil">
+          <tr>
+            <th>Name</th>
+            <th>Boiling Point (K)</th>
+            <th>Boiling Point (°C)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Helium</td>
+            <td>4.22</td>
+            <td>-268.93</td>
+          </tr>
+        </tbody>
       </table>
-
 </body>
 </html>

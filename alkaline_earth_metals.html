@@ -7,11 +7,12 @@
     <style>
         table {
             width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            
+            margin: 120px auto 20px; /* Adjust margin to accommodate fixed tabs */
+            border-collapse: collapse;            
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        th, td {
+
+        th,td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
@@ -20,7 +21,8 @@
             margin-top: 100px;
         }
         th {
-            background-color: #f0f0f0;
+            background-color: #e0e0e0;
+            font-weight: bold;
         }
         .tabs {
             position: fixed;
@@ -31,6 +33,8 @@
             padding: 10px 0;
             text-align: center;
             z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            
         }
         .tabs a {
             margin: 0 10px;
@@ -39,6 +43,22 @@
             padding: 5px 10px;
             border: 1px solid black;
             border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .tabs a:hover {
+          background-color: #e0e0e0;
+        }
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f8f8f8;
+          color: #333;
+          line-height: 1.6;
+          margin: 0;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px auto;
         }
         
     </style>
@@ -52,19 +72,24 @@
             </tr>
             <tr>
                 <th>Name</th>
-                <th>Atomic Number</th>
                 <th>Symbol</th>
+                <th>Atomic Number</th>
+                
             </tr>
             
+        </thead>
+        <tbody>
+            
+        </tbody>
+        
+        <thead>
             <tr>
-                <th colspan="3">Melting Point</th>
+                <th colspan="3">Melting Point (°C)</th>
             </tr>
             <tr>
-              <th colspan="3">Boiling Point</th>
+              <th colspan="3">Boiling Point (°C)</th>
             </tr>
-            <tr>
-              <th colspan="3"></th>
-            </tr>
+            
         </thead>
         <tbody>
             <tr>
@@ -99,6 +124,7 @@
             </tr>
         </tbody>
     </table>
+
     <div class="tabs">
         <a href="index.html">Home</a>
         <a href="alkali_metals.html">Alkali Metals</a>
