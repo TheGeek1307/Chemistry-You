@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodic Table</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            
+        }
+        .tab-button {
+            padding: 10px 20px;
+            border: 2px solid #4CAF50; /* Green border */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            cursor: pointer;
+            margin: 0 5px;
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+        .tab-button:hover {
+            background-color: white; /* White background on hover */
+            color: #4CAF50; /* Green text on hover */
+        }
+    </style>
 </head>
-<body>    
+<body>
+    <div class="tab-container">
+        <a href="alkali_metals.html" class="tab-button">Alkali Metals</a>
+        <a href="alkaline_earth_metals.html" class="tab-button">Alkaline Earth Metals</a>
+        <a href="halogens.html" class="tab-button">Halogens</a>
+        <a href="noble_gases.html" class="tab-button">Noble Gases</a>
+        <a href="transition_metals.html" class="tab-button">Transition Metals</a>
     <h1>The Periodic Table</h1>
-    <table id="periodic-table">
+        <a href="lanthanides.html" class="tab-button">Lanthanides</a>
+        <a href="actinides.html" class="tab-button">Actinides</a>
+    <table id="periodic-table" >
         <thead>
             <tr>
                 <th>Atomic Number</th>
@@ -23,6 +79,123 @@
             <tr>
                 <td>2</td><td>He</td><td>Helium</td><td>4.0026</td>
             </tr>
+            <tr>
+                <td>3</td><td>Li</td><td>Lithium</td><td>6.94</td>
+            </tr>
+            <tr>
+                <td>4</td><td>Be</td><td>Beryllium</td><td>9.0122</td>
+            </tr>
+            <tr>
+                <td>5</td><td>B</td><td>Boron</td><td>10.81</td>
+            </tr>
+            <tr>
+                <td>6</td><td>C</td><td>Carbon</td><td>12.011</td>
+            </tr>
+            <tr>
+                <td>7</td><td>N</td><td>Nitrogen</td><td>14.007</td>
+            </tr>
+            <tr>
+                <td>8</td><td>O</td><td>Oxygen</td><td>15.999</td>
+            </tr>
+            <tr>
+                <td>9</td><td>F</td><td>Fluorine</td><td>18.998</td>
+            </tr>
+            <tr>
+                <td>10</td><td>Ne</td><td>Neon</td><td>20.180</td>
+            </tr>
+            <tr>
+                <td>11</td><td>Na</td><td>Sodium</td><td>22.990</td>
+            </tr>
+            <tr>
+                <td>12</td><td>Mg</td><td>Magnesium</td><td>24.305</td>
+            </tr>
+            <tr>
+                <td>13</td><td>Al</td><td>Aluminum</td><td>26.982</td>
+            </tr>
+            <tr>
+                <td>14</td><td>Si</td><td>Silicon</td><td>28.085</td>
+            </tr>
+            <tr>
+                <td>15</td><td>P</td><td>Phosphorus</td><td>30.974</td>
+            </tr>
+            <tr>
+                <td>16</td><td>S</td><td>Sulfur</td><td>32.06</td>
+            </tr>
+            <tr>
+                <td>17</td><td>Cl</td><td>Chlorine</td><td>35.45</td>
+            </tr>
+            <tr>
+                <td>18</td><td>Ar</td><td>Argon</td><td>39.95</td>
+            </tr>
+            <tr>
+                <td>19</td><td>K</td><td>Potassium</td><td>39.098</td>
+            </tr>
+            <tr>
+                <td>20</td><td>Ca</td><td>Calcium</td><td>40.078</td>
+            </tr>
+            <tr>
+                <td>21</td><td>Sc</td><td>Scandium</td><td>44.956</td>
+            </tr>
+            <tr>
+                <td>22</td><td>Ti</td><td>Titanium</td><td>47.867</td>
+            </tr>
+            <tr>
+                <td>23</td><td>V</td><td>Vanadium</td><td>50.942</td>
+            </tr>
+            <tr>
+                <td>24</td><td>Cr</td><td>Chromium</td><td>51.996</td>
+            </tr>
+            <tr>
+                <td>25</td><td>Mn</td><td>Manganese</td><td>54.938</td>
+            </tr>
+            <tr>
+                <td>26</td><td>Fe</td><td>Iron</td><td>55.845</td>
+            </tr>
+            <tr>
+                <td>27</td><td>Co</td><td>Cobalt</td><td>58.933</td>
+            </tr>
+            <tr>
+                <td>28</td><td>Ni</td><td>Nickel</td><td>58.693</td>
+            </tr>
+            <tr>
+                <td>29</td><td>Cu</td><td>Copper</td><td>63.546</td>
+            </tr>
+            <tr>
+                <td>30</td><td>Zn</td><td>Zinc</td><td>65.38</td>
+            </tr>
+            <tr>
+                <td>31</td><td>Ga</td><td>Gallium</td><td>69.723</td>
+            </tr>
+            <tr>
+                <td>32</td><td>Ge</td><td>Germanium</td><td>72.630</td>
+            </tr>
+            <tr>
+                <td>33</td><td>As</td><td>Arsenic</td><td>74.922</td>
+            </tr>
+            <tr>
+                <td>34</td><td>Se</td><td>Selenium</td><td>78.971</td>
+            </tr>
+            <tr>
+                <td>35</td><td>Br</td><td>Bromine</td><td>79.904</td>
+            </tr>
+            <tr>
+                <td>36</td><td>Kr</td><td>Krypton</td><td>83.798</td>
+            </tr>
+            <tr>
+                <td>37</td><td>Rb</td><td>Rubidium</td><td>85.468</td>
+            </tr>
+            <tr>
+                <td>38</td><td>Sr</td><td>Strontium</td><td>87.62</td>
+            </tr>
+            <tr>
+                <td>39</td><td>Y</td><td>Yttrium</td><td>88.906</td>
+            </tr>
+            <tr>
+                <td>40</td><td>Zr</td><td>Zirconium</td><td>91.224</td>
+            </tr>
+            <tr>
+                <td>2</td><td>He</td><td>Helium</td><td>4.0026</td>
+            </tr>
             <tr><td>3</td><td>Li</td><td>Lithium</td><td>6.94</td></tr>
             <tr><td>4</td><td>Be</td><td>Beryllium</td><td>9.0122</td></tr>
             <tr><td>5</td><td>B</td><td>Boron</td><td>10.81</td></tr>
@@ -31,8 +204,82 @@
             <tr><td>8</td><td>O</td><td>Oxygen</td><td>15.999</td></tr>
             <tr><td>9</td><td>F</td><td>Fluorine</td><td>18.998</td></tr>
             <tr><td>10</td><td>Ne</td><td>Neon</td><td>20.180</td></tr>
+            <tr><td>11</td><td>Na</td><td>Sodium</td><td>22.990</td></tr>
+            <tr><td>12</td><td>Mg</td><td>Magnesium</td><td>24.305</td></tr>
+            <tr><td>13</td><td>Al</td><td>Aluminum</td><td>26.982</td></tr>
+            <tr><td>14</td><td>Si</td><td>Silicon</td><td>28.085</td></tr>
+            <tr><td>15</td><td>P</td><td>Phosphorus</td><td>30.974</td></tr>
+            <tr><td>16</td><td>S</td><td>Sulfur</td><td>32.06</td></tr>
+            <tr><td>17</td><td>Cl</td><td>Chlorine</td><td>35.45</td></tr>
+            <tr><td>18</td><td>Ar</td><td>Argon</td><td>39.95</td></tr>
+            <tr><td>19</td><td>K</td><td>Potassium</td><td>39.098</td></tr>
+            <tr><td>20</td><td>Ca</td><td>Calcium</td><td>40.078</td></tr>
+            <tr><td>21</td><td>Sc</td><td>Scandium</td><td>44.956</td></tr>
+            <tr><td>22</td><td>Ti</td><td>Titanium</td><td>47.867</td></tr>
+            <tr><td>23</td><td>V</td><td>Vanadium</td><td>50.942</td></tr>
+            <tr><td>24</td><td>Cr</td><td>Chromium</td><td>51.996</td></tr>
+            <tr><td>25</td><td>Mn</td><td>Manganese</td><td>54.938</td></tr>
+            <tr><td>26</td><td>Fe</td><td>Iron</td><td>55.845</td></tr>
+            <tr><td>27</td><td>Co</td><td>Cobalt</td><td>58.933</td></tr>
+            <tr><td>28</td><td>Ni</td><td>Nickel</td><td>58.693</td></tr>
+            <tr><td>29</td><td>Cu</td><td>Copper</td><td>63.546</td></tr>
+            <tr><td>30</td><td>Zn</td><td>Zinc</td><td>65.38</td></tr>
+            <tr><td>31</td><td>Ga</td><td>Gallium</td><td>69.723</td></tr>
+            <tr><td>32</td><td>Ge</td><td>Germanium</td><td>72.630</td></tr>
+            <tr><td>33</td><td>As</td><td>Arsenic</td><td>74.922</td></tr>
+            <tr><td>34</td><td>Se</td><td>Selenium</td><td>78.971</td></tr>
+            <tr><td>35</td><td>Br</td><td>Bromine</td><td>79.904</td></tr>
+            <tr><td>36</td><td>Kr</td><td>Krypton</td><td>83.798</td></tr>
+            <tr><td>37</td><td>Rb</td><td>Rubidium</td><td>85.468</td></tr>
+            <tr><td>38</td><td>Sr</td><td>Strontium</td><td>87.62</td></tr>
         </tbody>
-    </table>
+            <tr>
+        
+                <td>41</td><td>Nb</td><td>Niobium</td><td>92.906</td>
+            </tr>
+            <tr>
+                <td>42</td><td>Mo</td><td>Molybdenum</td><td>95.95</td>
+            </tr>
+            <tr>
+                <td>43</td><td>Tc</td><td>Technetium</td><td>98</td>
+            </tr>
+            <tr>
+                <td>44</td><td>Ru</td><td>Ruthenium</td><td>101.07</td>
+            </tr>
+            <tr>
+                <td>45</td><td>Rh</td><td>Rhodium</td><td>102.91</td>
+            </tr>
+            <tr>
+                <td>46</td><td>Pd</td><td>Palladium</td><td>106.42</td>
+            </tr>
+            <tr>
+                <td>47</td><td>Ag</td><td>Silver</td><td>107.87</td>
+            </tr>
+            <tr>
+                <td>48</td><td>Cd</td><td>Cadmium</td><td>112.41</td>
+            </tr>
+            <tr>
+                <td>49</td><td>In</td><td>Indium</td><td>114.82</td>
+            </tr>
+            <tr>
+                <td>50</td><td>Sn</td><td>Tin</td><td>118.71</td>
+            </tr>
+            <tr>
+                <td>51</td><td>Sb</td><td>Antimony</td><td>121.76</td>
+            </tr>
+            <tr>
+                <td>52</td><td>Te</td><td>Tellurium</td><td>127.6</td>
+            </tr>
+            <tr>
+                <td>53</td><td>I</td><td>Iodine</td><td>126.90</td>
+            </tr>
+            <tr>
+                <td>54</td><td>Xe</td><td>Xenon</td><td>131.29</td>
+            </tr>
+            
+        </tbody>
+    </table>  
+    </div>
 
 </body>
 </html>
