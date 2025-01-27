@@ -34,7 +34,6 @@
             border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
-
         }
 
         tbody tr:nth-child(even) {
@@ -58,7 +57,6 @@
             width: 100%;
             background-color: #333;
             color: white;
-            padding: 10px 0;
             z-index: 100; /* Ensure tabs are on top */
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -66,29 +64,36 @@
 
         .tabs a {
             color: white;
-            padding: 10px 20px;
+            padding: 5px 10px;
+            margin: 5px 0;
             text-decoration: none;
             margin: 0 10px;
             border-radius: 20px;
-            transition: background-color 0.3s ease;
             font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            
         }
 
         .tabs a:hover {
             background-color: #555;
+            transform: translateY(-2px);
         }
         .noblegas {
           background-color: #cce6ff; 
-        }
+        }        
 
-        .melt {
-          background-color: #ffcccc;
-        }
-
-        .boil {
-          background-color: #ccffcc;
+        .noblegas-table {
+          margin-bottom: 20px;
         }
     </style>
+    
+
+      
+    
+    
+
+
 </head>
 <body>
   <div class="tabs"> 
@@ -100,7 +105,7 @@
     <a href="#">Tab 3</a>
   </div>
     <h1>Noble Gases</h1>
-    <table>
+    <table class="noblegas-table">
         <thead>
             <tr class="noblegas">
                 <th>Name</th>
@@ -146,44 +151,35 @@
             </tr>
         </tbody>
     </table>
-
-    <h2>Melting Points</h2>
     <table>
-      <thead class="melt">
-        <tr>
-          <th>Name</th>
-          <th>Melting Point (K)</th>
-          <th>Melting Point (°C)</th>
-        </tr>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Melting Point (°C)</th>
+              <th>Boiling Point (°C)</th>
+          </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Helium</td>
-          <td>0.95</td>
-          <td>-272.20</td>
-        </tr>
-        <tr>
-          <td>Neon</td>
-          <td>24.56</td>
-          <td>-248.59</td>
-        </tr>
-        <tr>
-          <td>Argon</td>
-          <td>83.81</td>
-          <td>-189.34</td>
-        </tr>
-      </tbody>
-      </table>
-
-      <h2>Boiling Points</h2>
-      <table>
-        <thead class="boil">
           <tr>
-            <th>Name</th>
-            <th>Boiling Point (K)</th>
-            <th>Boiling Point (°C)</th>
+              <td>Helium</td>
+              <td>-272.20</td>
+              <td>-268.93</td>
           </tr>
-        </thead>
+          <tr>
+              <td>Neon</td>
+              <td>-248.59</td>
+              <td>-246.08</td>
+          </tr>
+          <tr>
+              <td>Argon</td>
+              <td>-189.34</td>
+              <td>-185.85</td>
+          </tr>
+          <tr>
+            <td>Krypton</td>
+            <td>-157.37</td>
+            <td>-153.22</td>
+          </tr>
         <tbody>
           <tr>
             <td>Helium</td>

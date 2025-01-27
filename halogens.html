@@ -20,14 +20,16 @@
             color: white;
             padding: 10px 0;
             text-align: center;
-            z-index: 100; /* Ensure tabs are on top */
+            z-index: 100;
         }
         .tabs a {
-            flex-grow: 1;
+            flex-grow: 0;
             display: block;
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 8px 12px; /* Adjusted padding for smaller tabs */
+            margin: 0 2px;
+            white-space: nowrap; /* Prevent text from wrapping */
             transition: background-color 0.3s;
         }
         .tabs a:hover{
@@ -39,7 +41,7 @@
             width: 80%;
             max-width: 800px;
             border-collapse: collapse;
-            margin: 80px auto 20px; /* Add top margin to avoid overlap with tabs */
+            margin: 60px auto 20px; /* Adjusted top margin */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         th, td {
@@ -52,7 +54,7 @@
         }
         h1 {
             text-align: center;
-            margin-top: 80px;
+            margin-top: 60px; /* Adjusted top margin */
         }
         .container{
             display:flex;
@@ -63,6 +65,10 @@
         .melting, .boiling{
             width: 35%;
         }
+    </style>
+     <style>
+        
+        table {width: auto; max-width: none;}
     </style>
 </head>
 <body>
@@ -82,79 +88,34 @@
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Element</th>
                     <th>Atomic Number</th>
                     <th>Symbol</th>
+                    <th>Melting Point (°C)</th>
+                    <th>Boiling Point (°C)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Fluorine</td><td>9</td><td>F</td></tr>
-                <tr><td>Chlorine</td><td>17</td><td>Cl</td></tr>
-                <tr><td>Bromine</td><td>35</td><td>Br</td></tr>
-                <tr><td>Iodine</td><td>53</td><td>I</td></tr>
-                <tr><td>Astatine</td><td>85</td><td>At</td></tr>
-                <tr><td>Tennessine</td><td>117</td><td>Ts</td></tr>
+                <tr>
+                    <td>Fluorine</td><td>9</td><td>F</td><td>-219.62</td><td>-188.12</td>
+                </tr>
+                <tr>
+                    <td>Chlorine</td><td>17</td><td>Cl</td><td>-101.5</td><td>-34.04</td>
+                </tr>
+                <tr>
+                    <td>Bromine</td><td>35</td><td>Br</td><td>-7.25</td><td>58.8</td>
+                </tr>
+                <tr>
+                    <td>Iodine</td><td>53</td><td>I</td><td>113.7</td><td>184.3</td>
+                </tr>
+                <tr>
+                    <td>Astatine</td><td>85</td><td>At</td><td>302.0</td><td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Tennessine</td><td>117</td><td>Ts</td><td>350.0</td><td>N/A</td>
+                </tr>
             </tbody>
         </table>
-
-         <table class="melting">
-        <thead>
-            <tr>
-                <th colspan="2">Melting Point</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fluorine:</td>
-                <td>-219.62 °C</td>
-            </tr>
-            <tr>
-                <td>Chlorine:</td>
-                <td>-101.5 °C</td>
-            </tr>
-            <tr>
-                <td>Bromine:</td>
-                <td>-7.25 °C</td>
-            </tr>
-            <tr>
-                <td>Iodine:</td>
-                <td>113.7 °C</td>
-            </tr><tr>
-                <td>Astatine:</td>
-                <td>302.0 °C</td>
-            </tr>
-            <tr>
-                <td>Tennessine:</td>
-                <td>350.0 °C</td>
-            </tr>
-
-        </tbody>
-    </table>
-     <table class="boiling">
-        <thead>
-            <tr>
-                <th colspan="2">Boiling Point</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fluorine:</td>
-                <td>-188.12 °C</td>
-            </tr>
-            <tr>
-                <td>Chlorine:</td>
-                <td>-34.04 °C</td>
-            </tr>
-              <tr>
-                <td>Bromine:</td>
-                <td>58.8 °C</td>
-            </tr>
-              <tr>
-                <td>Iodine:</td>
-                <td>184.3 °C</td>
-            </tr>
-        </tbody>
-    </table>
    </div>
 </body>
 </html>

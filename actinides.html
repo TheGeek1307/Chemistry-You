@@ -21,7 +21,6 @@
             z-index: 100; /* Ensure it's on top of other content */
             box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a subtle shadow */
             
-
         }
         
         
@@ -35,7 +34,7 @@
         .tabs li {
             display: inline;
             margin: 0 10px;
-        }
+        } 
 
         .tabs a {
             color: white;
@@ -43,6 +42,8 @@
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
+            padding: 5px 10px; /* Reduced padding for smaller tabs */
+            
         }
 
         .tabs a:hover {
@@ -110,17 +111,17 @@
                 <th>Name</th>
                 <th>Symbol</th>
                 <th>Atomic Number</th>
-                <th>Melting Point (°C)</th>
-                <th>Boiling Point (°C)</th>
+                <th>Melting Point</th>
+                <th>Boiling Point</th>
             </tr>
-        </thead>
+         </thead>
         <tbody>
             <tr>
                 <td>Actinium</td>
                 <td>Ac</td>
                 <td>89</td>
-                <td>1050</td>
-                <td>3200</td>
+                <td>1050°C</td>
+                <td>3200°C</td>
             </tr>
             <tr>
                 <td>Thorium</td>
@@ -175,7 +176,7 @@
                 <td>Berkelium</td>
                 <td>Bk</td>
                 <td>97</td>
-                <td>1050</td>
+                <td>1050°C</td>
                 <td>2627</td>
             </tr>
             <tr>
@@ -183,7 +184,8 @@
                 <td>Cf</td>
                 <td>98</td>
                 <td>900</td>
-                <td>1745</td>
+                <td>1745°C</td>
+               </tr>
             </tr>
             <tr>
                 <td>Einsteinium</td>
@@ -211,11 +213,11 @@
                 <td>Lr</td>
             </tr>
         </tbody>
-    </table>
-    <div class="points-header">
-        <h3>Melting Point</h3>
-        <h3>Boiling Point</h3>
-    </div>
+     </table>
+
+ <div style="text-align: center; margin-top: 20px;">
+        <p>Note: All melting and boiling points are in degrees Celsius (°C).</p>
+     </div>
 
 
 </body>
