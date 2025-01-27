@@ -5,50 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noble Gases</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      line-height: 1.6;
-      display: flex; /* Use flexbox to manage content layout */
-      flex-direction: column; /* Stack children vertically */
-      align-items: center; /* Center items horizontally */
-      min-height: 100vh; /* Ensure body takes up at least full viewport height */
-    }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-    .tabs {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f0f0f0; /* Light gray background for tabs */
-      z-index: 100; /* Ensure tabs are on top */
-      padding: 10px 0;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center; /* Center tabs horizontally */
-    }
+        table {
+            width: 80%;
+            margin: 80px auto 20px; /* Adjusted top margin to accommodate tabs */
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-    .tabs a {
-      color: #333; /* Dark text color */
-      padding: 8px 15px;
-      margin: 0 5px;
-      text-decoration: none;
-      border: 1px solid #ddd; /* Light border */
-      border-radius: 20px;
-      background-color: #fff; /* White background for tab links */
-      transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-      font-size: 14px; /* Smaller font size */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
-    .tabs a:hover {
-      background-color: #e0e0e0; /* Light gray on hover */
-      color: #000; /* Black text on hover */
-    }
+        th {
+            background-color: #f0f0f0;
+        }
+
+        /* Tab styles */
+        .tabs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+         .tabs a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black; /* Black text for tabs */
+            font-weight: bold;
+            padding: 5px 10px; /* Reduced padding for smaller tabs */
+            background-color: #f0f0f0; /* Light background for tabs */
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+         }
+
+         .tabs a:hover {
+           
+            background-color: #555; /* Slightly lighter on hover */
+            color: #ffd700; /* Change text color on hover */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px; /* Adjust margin for fixed tabs */
+            color: #333;
+        }
+
+        /* Alternating row colors */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect on table rows */
+        tbody tr:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
   </style>
 </head>
 <body>

@@ -5,27 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halogens</title> 
     <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 80px auto 20px; /* Adjusted top margin to accommodate tabs */
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        /* Tab styles */
         .tabs {
-            position: fixed; top: 0; width: 100%; display: flex; background-color: #6f42c1; z-index: 100; padding: 0; justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        .tabs a {
-            color: #ffffff; text-decoration: none; padding: 10px 20px; display: block;
+         .tabs a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black; /* Black text for tabs */
+            font-weight: bold;
+            padding: 5px 10px; /* Reduced padding for smaller tabs */
+            background-color: #f0f0f0; /* Light background for tabs */
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+         }
+
+         .tabs a:hover {
+           
+            background-color: #555; /* Slightly lighter on hover */
+            color: #ffd700; /* Change text color on hover */
         }
 
-        .tabs a:hover { background-color: #563d7c; }
+        h1 {
+            text-align: center;
+            margin-top: 100px; /* Adjust margin for fixed tabs */
+            color: #333;
+        }
 
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        /* Alternating row colors */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
 
-        table { width: auto; margin: 20px auto; border-collapse: collapse; }
-
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
-
-        th { background-color: #6f42c1; color: white; }
-
-        h1 { text-align: center; margin-top: 50px; }
-
-        .container { display: flex; justify-content: center; }
+        /* Hover effect on table rows */
+        tbody tr:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -40,9 +91,8 @@
     <a href="halogens.html">Halogens</a>
     <a href="noble_gases.html">Noble Gases</a>
     </div>
-        <h1>Halogen Group</h1>
-    <div class="container">
-        <table class="element-table">
+    <h1>Halogen Group</h1>
+        <table>
             <thead>
                 <tr>
                     <th>Element</th>
@@ -79,7 +129,6 @@
                 </tr><tr><td>Astatine</td><td>85</td><td>At</td><td>302.0 °C</td><td>N/A</td></tr><tr><td>Tennessine</td><td>117</td><td>Ts</td><td>350.0 °C</td><td>N/A</td>
                 </tr>
             </tbody>
-        </table>
-   </div>
+        </table>   
 </body>
 </html>

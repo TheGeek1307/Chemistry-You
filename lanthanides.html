@@ -6,64 +6,77 @@
     <title>Alkali Metals</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+                    font-family: sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                    color: #333;
+                }
+        
+                table {
+                    width: 80%;
+                    margin: 80px auto 20px; /* Adjusted top margin to accommodate tabs */
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+        
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                }
+        
+                th {
+                    background-color: #f0f0f0;
+                }
+        
+                /* Tab styles */
+                .tabs {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 15px 0;
+                    display: flex;
+                    justify-content: center;
+                    z-index: 100;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                }
+        
+                 .tabs a {
+                    margin: 0 10px;
+                    text-decoration: none;
+                    color: black; /* Black text for tabs */
+                    font-weight: bold;
+                    padding: 5px 10px; /* Reduced padding for smaller tabs */
+                    background-color: #f0f0f0; /* Light background for tabs */
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s;
+                 }
+        
+                 .tabs a:hover {
+                   
+                    background-color: #555; /* Slightly lighter on hover */
+                    color: #ffd700; /* Change text color on hover */
+                }
+        
+                h1 {
+                    text-align: center;
+                    margin-top: 100px; /* Adjust margin for fixed tabs */
+                    color: #333;
+                }
 
-        .header {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            padding: 10px;
-            
-        }
-
-        h1 {
-            color: #0056b3;
-            text-align: center;
-            margin-top: 60px; 
-        }
-
-        .tabs {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            background-color: #333;
-            z-index: 100;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .tabs a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            transition: background-color 0.3s;
-        }
-
-        .tabs a:hover {
-            background-color: #555;
-        }
-
-        .content-container {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .tabs a:hover{
-            background-color: darkgrey;
-        }
-        .section-header{
-            color: #0056b3;
-            margin-top: 30px;
-        }
+                 /* Alternating row colors */
+                tbody tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+        
+                /* Hover effect on table rows */
+                tbody tr:hover {
+                    background-color: #f0f0f0;
+                    cursor: pointer;
+                }
 
     </style>
 </head>
@@ -82,14 +95,13 @@
         <a href="halogens.html">Halogens</a>
         <a href="noble_gases.html">Noble Gases</a>
     </div>
-
-    <div class="content-container">
       <table>
         <thead>
             <tr>
                 <th>Atomic Number</th>
                 <th>Symbol</th>
                 <th>Name</th>
+                
                 <th>Melting Point (°C)</th>
                 <th>Boiling Point (°C)</th>
             </tr>
@@ -202,12 +214,11 @@
                 </tr>
             </tbody>
         </table>
-
-    </div>
-    <h3 class="section-header">Melting Points</h3>
+        <h3>Melting Points</h3>
     <p>Melting point data in the first table above.</p>
-    <h3 class="section-header">Boiling Points</h3>
+    <h3>Boiling Points</h3>
     <p>Boiling point data in the first table above.</p>
+    
 
 
 </body>
